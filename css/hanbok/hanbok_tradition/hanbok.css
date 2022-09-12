@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/image/bg/hanbok_background.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+}
+#root > div:nth-child(1) {
+  width: 70vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 0;
+  top: 10vh;
+}
+#root > div:nth-child(1) > div:nth-child(1) {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root > ul {
+  width: 40vw;
+  height: 5vh;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 101;
+  left: -17vw;
+  transform: rotate(-90deg);
+  color: #000;
+}
+#root > ul > li {
+  width: 13vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 800;
+}
+
+.glassHour ::before {
+  content: url(/image/hanbok/hanbok_tradition/glasshour.svg);
+  background-color: #DA7F58;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#title {
+  width: 30vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 35vw;
+}
+#title > p {
+  height: 7vh;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+#hanbok_tradition {
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
+}
+#hanbok_tradition #containerOne {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  opacity: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#hanbok_tradition #containerOne > div {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerOne > div:nth-child(1) {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+}
+#hanbok_tradition #containerOne > div:nth-child(1) #description_one {
+  width: 10vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 20vh;
+  left: 10vw;
+}
+#hanbok_tradition #containerOne > div:nth-child(1) #description_one > div:nth-child(1) {
+  width: 10vw;
+  height: 10vh;
+  font-family: "Gowun Batang", serif;
+}
+#hanbok_tradition #containerOne > div:nth-child(1) #description_one > div:nth-child(1) > p {
+  height: 4vh;
+  font-weight: 200;
+}
+#hanbok_tradition #containerOne > div:nth-child(1) > div:nth-child(2) {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerOne > div:nth-child(2) {
+  width: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerOne > div:nth-child(2) > div:nth-child(1) {
+  width: 40vw;
+  height: 60vh;
+}
+#hanbok_tradition > div:nth-child(2) {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition > div:nth-child(2) > span {
+  transform: scale(17, 20);
+  letter-spacing: 1px;
+  font-weight: 1000;
+  color: #fff;
+  position: relative;
+}
+#hanbok_tradition .tradition::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ebebf1;
+  width: 0%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.4s ease-out;
+}
+#hanbok_tradition .tradition:hover::before {
+  width: 100%;
+}
+#hanbok_tradition > div:nth-child(3) {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerTwo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: relative;
+}
+#hanbok_tradition #containerTwo > div:nth-child(1) {
+  width: 30vw;
+  height: 70vh;
+}
+#hanbok_tradition #containerTwo #description_two {
+  text-align: right;
+  font-family: "Gowun Batang", serif;
+}
+#hanbok_tradition #containerTwo #description_two > p {
+  width: 20vw;
+  height: 4vh;
+  font-weight: 500;
+  line-height: 30px;
+}
+#hanbok_tradition #containerThree {
+  width: 100vw;
+  height: 110vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+}
+#hanbok_tradition #containerThree #description_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gowun Batang", serif;
+}
+#hanbok_tradition #containerThree > div:nth-child(2) {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerFour {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+#hanbok_tradition #containerFour > div {
+  width: 80vw;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerFour > div:nth-child(1) {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#hanbok_tradition #containerFour > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 60vh;
+}
+#hanbok_tradition #containerFour > div:nth-child(2) {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_tradition #containerFour > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 60vh;
+}
+
+@media (min-width: 1024px) {
+  #logo {
+    width: 30vw;
+  }
+  #desTextOne {
+    position: absolute;
+    bottom: 12vh;
+    left: 1vw;
+  }
+  #description_two {
+    position: absolute;
+    top: 50vh;
+    right: 25vw;
+    font-size: 1rem;
+  }
+  #description_three {
+    width: 40vw;
+    height: 30vh;
+    font-size: 1rem;
+    line-height: 30px;
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    font-family: "Gowun Batang", seri;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #desTextOne {
+    position: absolute;
+    bottom: 15vh;
+    left: 1vw;
+    font-size: 0.7rem;
+  }
+  #description_two {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 30vh;
+    right: 17vw;
+    font-size: 0.2rem;
+  }
+  #description_three {
+    width: 32vw;
+    height: 30vh;
+    font-size: 0.5rem;
+    line-height: 30px;
+    position: absolute;
+    left: 9vw;
+    top: 40vh;
+    font-family: "Gowun Batang", seri;
+  }
+}
+@media (max-width: 767px) {
+  #desTextOne {
+    position: absolute;
+    bottom: 18vh;
+    left: 1vw;
+    font-size: 0.5px;
+  }
+  #description_two {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 15vh;
+    right: 15vw;
+    font-size: 0.1px;
+    line-height: 0px;
+  }
+  #description_three {
+    width: 30vw;
+    height: 10vh;
+    font-size: 0.01px;
+    line-height: 30px;
+    position: absolute;
+    left: 3vw;
+    bottom: 40vh;
+    font-family: "Gowun Batang", seri;
+  }
+}/*# sourceMappingURL=hanbok.css.map */
