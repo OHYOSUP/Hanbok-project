@@ -15,7 +15,7 @@ let colorArr = ['#BB272D', '#E3DDCB', '#3E465B', '#245441', '#6D1B43', '#161616'
         if(colorContainer[i].dataset.num === getDataset){
           colorImage.style.backgroundColor = colorArr[i];
           // console.dir(colorImage.children[0]);
-          colorImage.children[0].setAttribute('src',`../newwaveImage/hanbok_newWave_${i}.svg`);
+          colorImage.children[0].setAttribute('src',`../image/hanbok/hanbok_newWave/hanbok_newWave_${i}.svg`);
           colorImage.style.transition = '0.3s';
         }
       }
