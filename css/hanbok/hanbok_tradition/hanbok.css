@@ -7,7 +7,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-image: url(/image/bg/hanbok_background.svg);
+  background-image: url(./image/bg/hanbok_background.svg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@
 }
 
 .glassHour ::before {
-  content: url(/image/hanbok/hanbok_tradition/glasshour.svg);
+  content: url(./image/hanbok/hanbok_tradition/glasshour.svg);
   background-color: #DA7F58;
   position: absolute;
   left: 0;
