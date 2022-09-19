@@ -13,7 +13,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-image: url(/image/bg/hanbok_background.svg);
+  background-image: url(./image/bg/hanbok_background.svg);
   @include flexCenter(center, center);
   overflow: hidden;
   background-size: cover;
