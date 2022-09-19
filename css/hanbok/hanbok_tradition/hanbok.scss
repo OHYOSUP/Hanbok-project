@@ -13,7 +13,6 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background-image: url(./image/bg/hanbok_background.svg);
   @include flexCenter(center, center);
   overflow: hidden;
   background-size: cover;
@@ -61,7 +60,7 @@
 }
 
 .glassHour ::before {
-  content: url(./image/hanbok/hanbok_tradition/glasshour.svg);
+  content: url(/image/hanbok/hanbok_tradition/glasshour.svg);
   background-color: #DA7F58;
   position: absolute;
   left: 0;
